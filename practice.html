@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td {
+        width: 100px;
+        text-align: center;
+      }
+      .input-control {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Practice</h1>
+    <h2>Students</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Country</th>
+          <th>Email</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Weeraphot Bumbaugh</td>
+          <td>Thailand</td>
+          <td>weeraphot@bumbaugh.com</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <td>Billy Bob</td>
+          <td>USA</td>
+          <td>BillytheBob@gmail.com</td>
+          <td>33</td>
+        </tr>
+        <tr>
+          <td>Kirito Katagaya</td>
+          <td>Japan</td>
+          <td>swordart@gmail.com</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>Arthur Pendragon</td>
+          <td>England</td>
+          <td>numberoneknight@gmail.com</td>
+          <td>99</td>
+        </tr>
+      </tbody>
+    </table>
+    <form>
+      <input
+        type="text"
+        class="input-control"
+        placeholder="Add product's name"
+        required
+      />
+      <input
+        type="text"
+        class="input-control"
+        placeholder="Add a description"
+        disabled
+      />
+      <input
+        type="number"
+        class="input-control"
+        placeholder="Add the price"
+        required
+      />
+      <!-- <input type="email" class="input-control" placeholder="Add your email" /> -->
+      <!-- <input type="password" class="input-control" required /> -->
+      <label>Select the color of your product</label>
+      <input type="color" class="input-control" required />
+      <!-- <input type="date" class="input-control" disabled /> -->
+      <label>Select the payment method:</label>
+      <select required>
+        <option value="option1">Cash</option>
+        <option value="option2">Card</option>
+        <option value="option3">Paypal</option>
+      </select>
+
+      <button>Add</button>
+    </form>
+  </body>
+</html>
