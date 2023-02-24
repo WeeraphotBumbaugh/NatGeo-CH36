@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header.flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 300px;
+        background-color: #dedede;
+      }
+      header .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: gray;
+        width: 150px;
+        height: 150px;
+      }
+      main.flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 300px;
+      }
+      main.flex-container .list-container {
+        width: 50%;
+        height: 400px;
+        background-color: #f9d0d0;
+      }
+      main.flex-container .text-container {
+        width: 50%;
+        height: 400px;
+        background-color: #a5f3ff;
+      }
+      main .flex-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: gray;
+        width: 100%;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="flex-container">
+      <div class="image">Image</div>
+      <h1>This is a H1</h1>
+    </header>
+    <main class="flex-container">
+      <div class="list-container">
+        <h3>This is a list:</h3>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+      <div class="text-container">
+        <div class="flex-image">Insert any Image</div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
+          exercitationem saepe, error enim natus est cupiditate neque pariatur
+          excepturi sint voluptate quas repellat voluptatem perspiciatis ipsa
+          itaque inventore obcaecati rerum!
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
